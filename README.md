@@ -1,9 +1,10 @@
 # SPAM-of-random-Animefaces
 A ProGAN implementation trained on anime face dataset and a Docker with trained generator hosted on Raspberry pi(64 bit Ubuntu Server 20.04.4 LTS).
 
+Start training from 8x8 resolution, finished at 128x128 resolution(step 5).
+
 The dataset is provided by https://www.kaggle.com/datasets/scribbless/another-anime-face-dataset . 
 
-Start training from 8x8 resolution, finished at 128x128 resolution(step 5).
 
 # Install
 1. Download and attach trained weights and wheel of PyTorch and Torchvision compiled for Ubuntu 20.04 to "stream" folder
