@@ -3,6 +3,8 @@ A ProGAN implementation trained on anime face dataset and a Docker with trained 
 
 Start training from 8x8 resolution, finished at 128x128 resolution(step 5).
 
+Randomly generate anime faces in each 20-30 seconds on Raspberry pi.
+
 The dataset is provided by https://www.kaggle.com/datasets/scribbless/another-anime-face-dataset . 
 
 
