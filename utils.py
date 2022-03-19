@@ -20,6 +20,7 @@ def gradient_panelty(critic, real, fake, step, alpha):
     gradient_panelty = torch.mean((gradient_norm - 1)**2)
     return gradient_panelty
 
+#Credit@ Aladdin Persson
 def save_checkpoint(model, optimizer, image_size, epoch, alpha, filename="my_checkpoint.pth.tar"):
     print("=> Saving checkpoint")
     checkpoint = {
