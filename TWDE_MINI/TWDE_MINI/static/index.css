@@ -1,0 +1,158 @@
+body{
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Nav bar part */
+header{
+    position: fixed;
+    display: flex;
+}
+
+nav{
+    display: flex;
+}
+
+.icon{
+    display: none;
+}
+
+
+nav .Menu_button{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(135, 206, 235, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+nav .Menu_function{
+    width: 0px;
+    height: 50px;
+    background-color: rgb(240, 255, 255, 0.3);
+    position: relative;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    z-index: 2;
+}
+
+nav .Menu_function.opening{
+    width: 80px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+} 
+
+nav .Menu_button div{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+
+nav .Menu_button div.opening{
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+
+nav .Menu_button #bar1{
+    top: 20%;
+}
+
+nav .Menu_button #bar1.opening{
+    top: 46%;
+    transform: rotate(45deg);
+}
+
+nav .Menu_button #bar2{
+    top: 50%;
+    margin-top: -2px;
+}
+
+nav .Menu_button #bar2.opening{
+    width: 0px;
+}
+
+nav .Menu_button #bar3{
+    bottom: 20%;
+}
+
+nav .Menu_button #bar3.opening{
+    bottom: 46%;
+    transform: rotate(-45deg);
+}
+main{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+}
+
+main .pfp_block{
+    height: 135px;
+    width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: azure;
+}
+
+main .pfp_block .pfp{
+    height: 128px;
+    width: 128px;
+}
+
+main .pfp_block .pfp:hover{
+    height: 148px;
+    width: 148px;
+    z-index: 1;
+    transition: all 150ms;
+}
+
+.showcase_bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    z-index: 3;
+    background-color: rgb(0, 0, 0,0.3);
+}
+
+.showcase_container{
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.button_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
