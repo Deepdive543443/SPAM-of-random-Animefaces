@@ -23,6 +23,8 @@ docker run -it --name anime_cans_container -p 5000:5000 anime_cans
 to build and start the container
 
 # Preview
-![9ZDM_RMYF96HCRR`C57DQF4](https://user-images.githubusercontent.com/83911295/159079410-6de8c218-06ef-489b-a002-7dc336cb4e44.png)
-![IMG_0793](https://user-images.githubusercontent.com/83911295/159079426-474360a5-33f4-43a8-b6ba-8946c0169d41.JPG)
+
+http://120.24.218.136/
+![image](https://user-images.githubusercontent.com/83911295/180642653-190857d6-65a6-4c46-86f8-3aad38f510c9.png)
+
 
