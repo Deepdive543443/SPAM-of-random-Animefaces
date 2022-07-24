@@ -9,7 +9,7 @@ The dataset is provided by https://www.kaggle.com/datasets/scribbless/another-an
 
 
 # Install
-1. Download and attach trained weights and wheel of PyTorch and Torchvision compiled for Ubuntu 20.04 to "stream" folder
+1. Download and attach trained weights and wheel of PyTorch and Torchvision compiled for Ubuntu 20.04 to root and "weight" folder
 https://drive.google.com/drive/folders/1pI_oUTL1QL2v20clE2jFICu5iUqBsHUV?usp=sharing
 
 Or download wheels from Q-engineering's page
