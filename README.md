@@ -25,7 +25,7 @@ to build and start the container
 # Preview
 Hosted at: http://120.24.218.136/
 
-STILL LOTS OF CURSED OUTPUT, so beware of it
+STILL LOTS OF CURSED OUTPUT, BEWARE OF IT
 
 ![image](https://user-images.githubusercontent.com/83911295/180642746-72b521f8-8262-4ac3-84a4-875cdb30e897.png)
 
