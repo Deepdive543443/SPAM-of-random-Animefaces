@@ -1,11 +1,14 @@
 import torch
 import config
+import time
+
+
 
 def gradient_panelty(critic, real, fake, step, alpha):
     B,C,H,W = real.shape
     epsilon = torch.randn((B, 1, 1, 1)).repeat(1, C, H, W).to(config.DEVICE)
     interpolated_images = (epsilon*real + (1-epsilon)*fake.detach()).requires_grad_(True)
-    interpolated_score= critic(interpolated_images, step, alpha)
+    interpolated_score = critic(interpolated_images, step, alpha)
 
     gradient = torch.autograd.grad(
         inputs=interpolated_images,
@@ -21,14 +24,15 @@ def gradient_panelty(critic, real, fake, step, alpha):
     return gradient_panelty
 
 #Credit@ Aladdin Persson
-def save_checkpoint(model, optimizer, image_size, epoch, alpha, filename="my_checkpoint.pth.tar"):
+def save_checkpoint(model, optimizer, image_size, epoch, alpha, noise, filename="my_checkpoint.pth.tar"):
     print("=> Saving checkpoint")
     checkpoint = {
         "state_dict": model.state_dict(),
         "optimizer": optimizer.state_dict(),
         "image_size": image_size,
         "epoch":epoch,
-        "alpha":alpha
+        "alpha":alpha,
+        "fixed_noise":noise
     }
     torch.save(checkpoint, filename)
 
@@ -41,9 +45,16 @@ def load_checkpoint(checkpoint_file, model, optimizer, lr):
     image_size = checkpoint["image_size"]
     epoch = checkpoint["epoch"]
     alpha = checkpoint["alpha"]
+    fixed_noise = checkpoint["fixed_noise"]
 
     # If we don't do this then it will just have learning rate of old checkpoint
     # and it will lead to many hours of debugging \:
     for param_group in optimizer.param_groups:
         param_group["lr"] = lr
-    return image_size, epoch, alpha
+    return image_size, epoch, alpha, fixed_noise
+
+
+def print_time():
+    seconds = time.time()
+    local_time = time.ctime(seconds)
+    print("Local time:", local_time)

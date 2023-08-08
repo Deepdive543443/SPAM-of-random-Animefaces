@@ -3,19 +3,19 @@ from math import log2
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 #Path
-DATASET = 'Anime256'
+DATASET = 'faces'
 TRANSFORM = True
 
 #Model
 SAVE_MODEL = True
-LOAD_MODEL = True
-FLOAT16 = True
+LOAD_MODEL = False
+FLOAT16 = False
 
 #Dataset
 TEST_SPLIT = None#240
 SHUFFLE = True
 FACTORS = [1, 1, 1, 2, 2, 2, 2, 2]#[1, 1, 1, 1, 1, 2, 2, 2]  #4, 8, 16, 32, 64, 128, 256, 512, 1024
-BATCH_SIZE = [64, 64, 64, 32, 16, 4, 3, 2, 2] #4, 8, 16, 32, 64, 128, 256, 512, 1024
+BATCH_SIZE = [128, 128, 128, 64, 32, 8, 6, 4, 4] #4, 8, 16, 32, 64, 128, 256, 512, 1024
 START_IMAGESIZE = 8
 TARGET_IMAGESIZE = 256
 
@@ -31,4 +31,6 @@ BETA1 = 0
 BETA2 = 0.99
 LAMBDA_GP = 10
 
+# Bar 
+BAR = False
 

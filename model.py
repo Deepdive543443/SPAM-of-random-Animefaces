@@ -83,6 +83,20 @@ class Generator(nn.Module):
         progressed_rgb = self.rgb[steps](x)
 
         return self.fade_in(alpha, upsampled_rgb, progressed_rgb)
+    
+
+class Generator_trace(Generator):
+    def __init__(self, img_channels=3, latent_vector=512, factors=[1, 1, 1, 2, 2, 2, 2, 2]):
+        super().__init__(img_channels, latent_vector, factors)
+
+    
+    def forward(self, x):
+        x = self.init(x)
+        for step in range(6):
+            upsampled = self.upsample(x)
+            x = self.main[step](upsampled)
+
+        return self.rgb[6](x)
 
 
 class Discriminator(nn.Module):
