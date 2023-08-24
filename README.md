@@ -26,9 +26,9 @@ to build and start the container
 Hosted at: http://120.24.218.136/
 
 BEWARE OF CURSED OUTPUT
-![image](https://github.com/Deepdive543443/SPAM-of-random-Animefaces/assets/83911295/0c9a8ef0-6c7e-40c5-8163-e8dfc4d3f378)
+
 
 ![image](https://github.com/Deepdive543443/SPAM-of-random-Animefaces/assets/83911295/3a4e0e3e-d0db-4af6-b995-f3138bb35ee3)
-
+![image](https://github.com/Deepdive543443/SPAM-of-random-Animefaces/assets/83911295/0c9a8ef0-6c7e-40c5-8163-e8dfc4d3f378)
 
 
