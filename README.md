@@ -27,7 +27,7 @@ Hosted at: http://120.24.218.136/
 
 BEWARE OF CURSED OUTPUT
 
-![image](https://user-images.githubusercontent.com/83911295/180642746-72b521f8-8262-4ac3-84a4-875cdb30e897.png)
+![image](https://github.com/Deepdive543443/SPAM-of-random-Animefaces/assets/83911295/3a4e0e3e-d0db-4af6-b995-f3138bb35ee3)
 
 
 
