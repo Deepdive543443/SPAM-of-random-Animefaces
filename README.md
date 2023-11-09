@@ -4,7 +4,7 @@ A ProGAN implementation trained on anime face dataset
 The dataset is provided by https://www.kaggle.com/datasets/scribbless/another-anime-face-dataset . 
 
 # Demo
-- NCNN demo:
+- NCNN demo: https://github.com/Deepdive543443/SPAM-of-random-Animefaces/releases/tag/demo
 
 - Web demo (Docker required)
   Clone this repo, then run
