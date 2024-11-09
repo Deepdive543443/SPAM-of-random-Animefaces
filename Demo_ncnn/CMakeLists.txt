@@ -6,14 +6,9 @@ project(TWNE_MINI VERSION 0.1.0 LANGUAGES C CXX)
 
 
 add_executable(TWNE_MINI main.cpp)
-
-
-set(OpenCV_DIR D:/cpp_libs/opencv-mobile-4.8.1-windows-vs2022/x64/x64/vc17/staticlib)
 find_package(OpenCV REQUIRED)
 target_link_libraries( TWNE_MINI ${OpenCV_LIBS} )
 
-
-set(ncnn_DIR D:/cpp_libs/ncnn-20231027-windows-vs2022/x64/lib/cmake/ncnn CACHE PATH "Directory that contains ncnnConfig.cmake")
 find_package(ncnn REQUIRED)
 target_link_libraries(TWNE_MINI ncnn)
 
